@@ -1,0 +1,14 @@
+# 告诉eslint工具这里配置的文件代码都不需要检查
+src/utils/popper.js
+src/utils/date.js
+examples/play
+*.sh
+node_modules
+lib
+coverage
+*.md
+*.scss
+*.woff
+*.ttf
+src/index.js
+dist

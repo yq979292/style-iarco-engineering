@@ -13,12 +13,14 @@
 
 // 1：获取git的参数配置，为了获取git commit 的提交呢日哦那个
 const msgPath = process.env.HUSKY_GIT_PARAMS;
+console.log('====>',msgPath)
 // 作用：node 工具提示信息设置样式
 const chalk = require('chalk');
 // 1.5 读取git commit的提交信息
 const msg = require('fs')
     .readFileSync(msgPath, 'utf-8')
-    .trim()
+    .trim();
+console.log(msg);
 // 2 验证是否有关键字
 const commitRE = /^(feat|fix|docs|style|refactor|perf|test|workflow|build|ci|chore|release|workflow)(\(.+\))?: .{1,50}/
 
